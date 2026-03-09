@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="h-16 header p-2 sticky top-0">
+
+        <div class="n-full mx-auto container">
+            <div class="flex gap-12 items-center justify-between">
+                <div class="flex items-center gap-[14.5px]  max-md:hidden">
+                    <img src="./assets/image/car.svg" />
+                    <h3 class="text-sm font-open font-bold">Car Rental</h3>
+
+                </div>
+                <div>
+                    <ul class="flex gap-5 font-semibold max-md:hidden">
+                        <li class="hover:text-[#FF9E0C]">Home</li>
+                        <li class="font-bold hover:text-[#FF9E0C]">Vehicles</li>
+                        <li class="hover:text-[#FF9E0C]">Details</li>
+                        <li class="hover:text-[#FF9E0C]">About Us</li>
+                        <li class="hover:text-[#FF9E0C]">Contact Us</li>
+                    </ul>
+                </div>
+                <button class="md:hidden size-12">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="flex items-center gap-3">
+                    <img src="./assets/image/needhelp.svg" />
+                    <div class="flex-column">
+                        <h3>Need help?</h3>
+                        <h3 class="font-bold"> +996 247-1680</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+
+        <section class="cards-rent py-8">
+
+            <div class="n-full mx-auto container">
+                
+
+                    <div class="hed flex flex-col justify-center items-center gap-10">
+
+                        <h1 class="font-bold text-3xl">Select a vehicle group</h1>
+                        <div class="choose flex gap-10 items-center">
+
+                            <button class="bg-[#5937E0] rounded-2xl p-2 text-white text-xs">All vehicles</button>
+
+
+                            <div class="details flex gap-2">
+                                <img src="./assets/image/vehicle/sedan.svg" />
+                                <div class="info">
+                                    <h4>Sedan</h4>
+                                </div>
+                            </div>
+
+                            <div class="details flex gap-2">
+                                <img src="./assets/image/vehicle/cabriolet.svg" />
+                                <div class="info">
+                                    <h4>Cabriolet</h4>
+                                </div>
+                            </div>
+                            <div class="details flex gap-2">
+                                <img src="./assets/image/vehicle/pickup.svg" />
+                                <div class="info">
+                                    <h4>Pickup</h4>
+                                </div>
+                            </div>
+                            <div class="details flex gap-2">
+                                <img src="./assets/image/vehicle/suv.svg" />
+                                <div class="info">
+                                    <h4>SUV</h4>
+                                </div>
+                            </div>
+                            <div class="details flex gap-2">
+                                <img src="./assets/image/vehicle/minivan.svg" />
+                                <div class="info">
+                                    <h4>Minivan</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                
+
+                <div class="card-rent grid grid-cols-3 gap-4 py-8">
+
+                    <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl" src="./assets/image/image-card/m-sedan.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Mercedes</h2>
+                                <span class="pl-1">Sedan</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$25</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+                    <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl" src="./assets/image/image-card/m-sport.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Mercedes</h2>
+                                <span class="pl-1">Sport</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$50</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+                    <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full" src="./assets/image/image-card/m-sedan4.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Mercedes</h2>
+                                <span class="pl-1">Sedan</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$45</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+                    <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full" src="./assets/image/image-card/porsche.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Porsche</h2>
+                                <span class="pl-1">SUV</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$40</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+                    <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full" src="./assets/image/image-card/toyota.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">toyota</h2>
+                                <span class="pl-1">Sedan</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$35</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+                    <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full" src="./assets/image/image-card/porsche2.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Porsche</h2>
+                                <span class="pl-1">SUV</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$50</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+                     <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full h-77.5" src="./assets/image/image-card/van.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Mercedes</h2>
+                                <span class="pl-1">Van</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$50</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div> <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full" src="./assets/image/image-card/toyota-sport.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">toyota</h2>
+                                <span class="pl-1">Sport</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$60</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div> <div class="card-content border border-dashed rounded-2xl">
+
+                        <img class="rounded-2xl w-full" src="./assets/image/image-card/maybach.jpg" />
+                        <div class="content flex justify-between items-center">
+                            <div class="details-left">
+                                <h2 class="pl-1 font-bold">Maybach</h2>
+                                <span class="pl-1">Sedan</span>
+                            </div>
+                            <div class="details-right">
+                                <h3 class="pt-1 text-[#5937E0] font-bold">$70</h3>
+                                <span class="pr-1">per day</span>
+                            </div>
+                        </div>
+
+                        <div class="card-information flex gap-5 py-6 justify-between px-2">
+                            <div class="svg-card flex gap-1 items-center">
+                                <img class="pl-1" src="./assets/image/image-card/svg-card/gear.svg" />
+                                <span class="text-xs pl-1">Automatic</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/gas.svg" />
+                                <span class="text-xs">PB 95</span>
+                            </div>
+                            <div class="svg-card flex gap-1 items-center">
+                                <img src="./assets/image/image-card/svg-card/air.svg" />
+                                <span class="text-xs">Air Conditioner</span>
+                            </div>
+                        </div>
+                        <div class="button flex justify-center py-2">
+                            <button class="border rounded-xl px-30 py-1 bg-[#5937E0]">View Details</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
