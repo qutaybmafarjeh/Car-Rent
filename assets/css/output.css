@@ -8,8 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-indigo-600: oklch(51.1% 0.262 276.966);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
@@ -17,6 +18,8 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -246,12 +249,6 @@
     width: calc(var(--spacing) * 12);
     height: calc(var(--spacing) * 12);
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-1\/2 {
-    height: calc(1 / 2 * 100%);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -261,20 +258,62 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-35 {
+    height: calc(var(--spacing) * 35);
+  }
+  .h-75 {
+    height: calc(var(--spacing) * 75);
+  }
+  .h-75\.75 {
+    height: calc(var(--spacing) * 75.75);
+  }
   .h-77 {
     height: calc(var(--spacing) * 77);
   }
   .h-77\.5 {
     height: calc(var(--spacing) * 77.5);
   }
-  .h-\[310\] {
-    height: 310;
+  .h-303 {
+    height: calc(var(--spacing) * 303);
   }
-  .h-\[310px\] {
-    height: 310px;
+  .h-\[140\] {
+    height: 140;
   }
-  .h-full {
-    height: 100%;
+  .h-\[140px\] {
+    height: 140px;
+  }
+  .h-\[303\] {
+    height: 303;
+  }
+  .h-\[303px\] {
+    height: 303px;
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-140 {
+    width: calc(var(--spacing) * 140);
+  }
+  .w-159 {
+    width: calc(var(--spacing) * 159);
+  }
+  .w-\[100px\] {
+    width: 100px;
+  }
+  .w-\[636\] {
+    width: 636;
+  }
+  .w-\[636px\] {
+    width: 636px;
   }
   .w-full {
     width: 100%;
@@ -287,6 +326,9 @@
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -324,9 +366,6 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -335,6 +374,9 @@
   }
   .gap-18 {
     gap: calc(var(--spacing) * 18);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .gap-24 {
     gap: calc(var(--spacing) * 24);
@@ -366,14 +408,12 @@
   .gap-\[24px\] {
     gap: 24px;
   }
-  .gap-\[40px\] {
-    gap: 40px;
-  }
-  .gap-\[135\] {
-    gap: 135;
-  }
-  .gap-\[135px\] {
-    gap: 135px;
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -398,6 +438,9 @@
   .bg-\[\#5937E0\] {
     background-color: #5937E0;
   }
+  .bg-\[\#FAFAFA\] {
+    background-color: #FAFAFA;
+  }
   .bg-\[\#FF9E0C\] {
     background-color: #FF9E0C;
   }
@@ -419,6 +462,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -433,6 +479,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-30 {
     padding-inline: calc(var(--spacing) * 30);
@@ -479,8 +528,26 @@
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
   }
+  .pr-3 {
+    padding-right: calc(var(--spacing) * 3);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-15 {
+    padding-right: calc(var(--spacing) * 15);
+  }
+  .pr-20 {
+    padding-right: calc(var(--spacing) * 20);
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -497,6 +564,10 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -504,6 +575,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -531,6 +606,15 @@
   }
   .text-\[\#5937E0\] {
     color: #5937E0;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-gray-50 {
+    color: var(--color-gray-50);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-indigo-600 {
     color: var(--color-indigo-600);
@@ -571,6 +655,11 @@
       display: none;
     }
   }
+  .sm\:max-w-sm {
+    @media (width >= 40rem) {
+      max-width: var(--container-sm);
+    }
+  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
@@ -581,6 +670,11 @@
       rotate: 180deg;
     }
   }
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -599,6 +693,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
