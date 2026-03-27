@@ -13,28 +13,28 @@
 </head>
 
 <body>
-    <div class="h-16 header p-2 sticky top-0">
+    <div class="h-16 header p-2 sticky  top-0">
 
         <div class="n-full mx-auto container">
-            <div class="flex gap-12 items-center justify-between">
-                <div class="flex items-center gap-[14.5px]  max-md:hidden">
+            <div class="flex flex-wrap gap-12 items-center justify-between">
+                <div class="flex flex-wrap items-center gap-[14.5px]  max-md:hidden">
                     <img src="./assets/image/car.svg" />
                     <h3 class="text-sm font-open font-bold">Car Rental</h3>
 
                 </div>
                 <div>
-                    <ul class="flex gap-5 font-semibold max-md:hidden">
+                    <ul class="flex flex-wrap gap-5 font-semibold max-md:hidden">
                         <li class="hover:text-[#FF9E0C]">Home</li>
                         <li class="font-bold hover:text-[#FF9E0C]"><a href="./Vehicles.html">Vehicles</a> <br></li>
                         <li class="hover:text-[#FF9E0C]"><a href="./details.html">Details</a> <br></li>
                         <li class="hover:text-[#FF9E0C]"><a href="./about.html">About</a></li>
-                        <li class="hover:text-[#FF9E0C]">Contact Us</li>
+                     <li class="hover:text-[#FF9E0C]"><a href="./contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <button class="md:hidden size-12">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="flex items-center gap-3">
+                <div class="flex flex-wrap items-center gap-3">
                     <img src="./assets/image/needhelp.svg" />
                     <div class="flex-column">
                         <h3>Need help?</h3>
@@ -48,8 +48,9 @@
 
     <main>
 
-        <section class="hero relative">
-            <img class="absolute left-96 pb-5 " src="./assets/image/backcar.png" />
+        <section class="hero relative max-md:text-center ">
+            
+            <img class="absolute left-96 pb-5 max-xl:hidden" src="./assets/image/backcar.png" />
             <div class="mx-auto py-8 rounded-2xl container bg-[#5937E0]">
                 <div class="flex justify-center gap-10 flex-wrap">
                     <div class="left-side relative">
@@ -74,6 +75,7 @@
                 </div>
 
             </div>
+      
         </section>
 
         <section class="Availabilities py-5">
@@ -165,7 +167,7 @@
                     </a>
                 </div>
 
-                <div class="card-rent grid grid-cols-3 gap-4 py-8">
+                <div class="card-rent grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4 py-8">
 
                     <div class="card-content border border-dashed rounded-2xl">
 
@@ -372,7 +374,7 @@
 
         <section class="rating py-5 relative">
 
-            <img class="absolute left-96 pb-5" src="./assets/image/rating/Img.png" />
+            <img class="absolute left-96 pb-5 max-xl:hidden" src="./assets/image/rating/Img.png" />
 
 
             <div class="mx-auto py-8 rounded-2xl container bg-[#5937E0]">
@@ -381,7 +383,7 @@
                     <p class="text-white py-8">Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien bibendum
                         ullamcorper <br> in. Diam tincidunt tincidunt erat at semper fermentum</p>
                 </div>
-                <div class="rate relative flex justify-between px-8 py-8">
+                <div class="rate relative flex flex-wrap justify-between px-8 py-8">
 
                     <div class="number-rate flex border pl-2 pr-10 items-center bg-white rounded-2xl py-2">
                         <img src="./assets/image/rating/car.png" />
@@ -423,7 +425,7 @@
             <div class="n-full mx-auto container">
 
 
-                <div class="mobile flex justify-center gap-24.75 items-center">
+                <div class="mobile flex flex-wrap justify-center gap-24.75 items-center">
 
                     <div class="left-side">
 
@@ -432,7 +434,7 @@
                             turpis nibh placerat massa. Fermentum urna ut at et in. Turpis <br>
                             aliquet cras hendrerit enim condimentum. Condimentum interdum <br> risus bibendum urna</p>
 
-                        <div class="image-app flex gap-10">
+                        <div class="image-app flex flex-wrap gap-10">
                             <img src="./assets/image/mobile/App Store.svg" />
                             <img src="./assets/image/mobile/Group.svg" />
                         </div>
@@ -440,7 +442,7 @@
 
                     <div class="right-side flex relative">
                         <img src="./assets/image/mobile/Group 9.png" />
-                        <img class="absolute left-40 top-10" src="./assets/image/mobile/Group 9.png" />
+                        <img class="absolute left-40 top-10 max-lg:hidden" src="./assets/image/mobile/Group 9.png" />
                     </div>
 
                 </div>
@@ -470,7 +472,7 @@
 
 
                     </div>
-                    <div class="right-side">
+                    <div class="right-side max-md:hidden">
                         <img src="./assets/image/search/car.png" />
                     </div>
                 </div>
@@ -483,21 +485,21 @@
     <footer class="footer py-8">
         <div class="n-full mx-auto container">
 
-            <div class="first flex justify-between">
+            <div class="first flex flex-wrap justify-between">
 
-                <div class="content flex items-center gap-2">
+                <div class="content flex flex-wrap items-center gap-2">
                     <img src="./assets/image/car.svg" />
                     <h4 class="font-bold">Car Rental</h4>
                 </div>
-                <div class="content flex items-center gap-2">
+                <div class="content flex flex-wrap items-center gap-2">
                     <img src="./assets/image/footer/location.svg" />
-                    <div class="details flex flex-col">
+                    <div class="details flex flex-wrap flex-col">
                         <h4>Address</h4>
 
                         <span class="font-medium">Oxford Ave. Cary, NC 27511</span>
                     </div>
                 </div>
-                <div class="content flex items-center gap-2">
+                <div class="content flex flex-wrap items-center gap-2">
                     <img src="./assets/image/footer/messege.svg" />
                     <div class="details flex flex-col">
                         <h4>Email </h4>
@@ -505,9 +507,9 @@
                         <span class="font-medium">nwiger@yahoo.com</span>
                     </div>
                 </div>
-                <div class="content flex items-center gap-2">
+                <div class="content flex flex-wrap items-center gap-2">
                     <img src="./assets/image/footer/call.svg" />
-                    <div class="details flex flex-col">
+                    <div class="details flex flex-wrap flex-col">
                         <h4>Phone </h4>
 
                         <span class="font-medium">+537 547-6401</span>
@@ -520,13 +522,13 @@
 
             <div class="second py-8">
 
-                <div class="left-side flex justify-between">
+                <div class="left-side flex flex-wrap justify-between">
                     <div class="all-content">
                         <p class="font-medium">Faucibus faucibus <br> pellentesque dictum turpis. <br>
                             Id pellentesque turpis <br>
                             massa a id iaculis lorem </p>
 
-                        <div class="social py-6 flex gap-6">
+                        <div class="social py-6 flex flex-wrap gap-6">
                             <img src="./assets/image/footer/facebook.svg" />
                             <img src="./assets/image/footer/instagram.svg" />
                             <img src="./assets/image/footer/x.svg" />
@@ -534,7 +536,7 @@
                         </div>
                     </div>
 
-                    <div class="center flex flex-col gap-1">
+                    <div class="center flex flex-wrap flex-col gap-1">
                         <h2 class="font-bold py-2">Useful links</h2>
                         <h4>About us</h4>
                         <h4>Contact us</h4>
@@ -543,7 +545,7 @@
                         <h4>F.A.Q</h4>
                     </div>
 
-                    <div class="center flex flex-col gap-1">
+                    <div class="center flex flex-wrap flex-col gap-1">
                         <h2 class="font-bold py-2">Vehicles</h2>
                         <h4>Sedan</h4>
                         <h4>Cabriolet</h4>
@@ -552,7 +554,7 @@
                         <h4>SUV</h4>
                     </div>
 
-                    <div class="center flex flex-col gap-1">
+                    <div class="center flex flex-wrap flex-col gap-1">
                         <h2 class="font-bold py-2">Download App</h2>
                         <img src="./assets/image/mobile/App Store.svg" />
                         <img class="pt-3" src="./assets/image/mobile/Group.svg" />
